@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08.06.2015, 11:39:36
+    Author     : Evtim
+*/
+.mobi-wrapper{
+    overflow: hidden;
+}
+.mobi-button{
+    display: none;
+}
+@media(max-width:960px){
+    .mobi-button{
+        display: block;
+    }
+}
+.mobi-wrapper{
+    position: absolute;
+    background: #333;
+    height: 100%;
+    z-index: 30000;
+    width:250px;
+    -webkit-box-shadow: inset 3px 2px 34px -19px rgba(107,99,107,1);
+    -moz-box-shadow: inset 3px 2px 34px -19px rgba(107,99,107,1);
+    box-shadow: inset 3px 2px 34px -19px rgba(107,99,107,1);
+    width: 300px;
+    
+}
+.mobi-left .mobi-wrapper{
+    left:-300px;
+}
+.mobi-right .mobi-wrapper{
+    right:-300px;
+}
+.mobi-wrapper ul li{
+    float: none;
+    padding: 10px;
+}
+/*body{
+    overflow: hidden;
+}*/
+.l-page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;  
+}
+.mobi-button{
+    width: 100px;
+    height: 100%;
+    z-index: 20000;
+}
+.mobi-easy-close{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2000;
+    opacity: 0.4;
+}
+.mobi-top .mobi-wrapper{
+    position: relative;
+    top: 108px;
+    left:0px;
+    width: 100%;
+    height:0px;
+}
