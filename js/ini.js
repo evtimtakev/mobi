@@ -1,8 +1,8 @@
 (function ($) {
-    Drupal.behaviors.Mobi = {
-        attach: function (context, settings) {
-            $(window).on('load', function () {
-                if ($(window).width() <= 960) {
+    
+      
+          $(window).on('load',function(){
+			 if ($(window).width() <= 960) {
                     
                     $('html').addClass('mobi-processed');
                     
@@ -10,8 +10,10 @@
                         side: 'top',
                         destination: 'l-page'
                     });
-                }
-            });
+                } 
+		  })
+                
+          
 
             ///Implementing Resize functionality
 
@@ -28,8 +30,7 @@
                 else {
 
                 }
-            });
-        }};
+       
 
 
 })(jQuery);
